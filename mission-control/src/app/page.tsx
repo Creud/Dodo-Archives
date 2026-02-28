@@ -1,6 +1,7 @@
 import { ThemeToggle } from "@/components/theme-toggle";
 import { OfficeScene } from "@/components/office/office-scene";
 import { ChatPanel } from "@/components/chat/chat-panel";
+import { OpenClawStatus } from "@/components/office/openclaw-status";
 import { mockAgents } from "@/lib/agents";
 
 export default function Page() {
@@ -29,8 +30,9 @@ export default function Page() {
           <OfficeScene agents={mockAgents} />
         </section>
 
-        <section className="mt-6">
+        <section className="mt-6 grid grid-cols-1 gap-4 lg:grid-cols-2">
           <ChatPanel />
+          <OpenClawStatus />
         </section>
 
         <footer className="mt-10 text-[10px] text-white/40">

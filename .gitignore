@@ -1,0 +1,7 @@
+# Secrets
+*.pem
+*.key
+*_deploy_key
+*_deploy_key.pub
+.secrets/
+.env*
